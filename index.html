@@ -5,33 +5,38 @@
   <meta charset="utf-8">
 
   <title>Nodeschool Haarlem</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="resources/style.css" rel="stylesheet" type="text/css" />
   <style>
-    body {
-        font-family: "Open Sans", sans-serif;
-        margin: 0;
-    }
-
     h1 {
         margin: 0 0 50px 0;
         background-color: #e67e22;
         color: #fff;
-        font-size: 2em;
+        font-size: 2.5em;
         line-height: 1.3em;
-        font-weight: 100;
+        font-weight: 700;
         text-align: center;
     }
 
     .logo {
         display: block;
         width: 400px;
-        margin: auto;
+        margin: 0 auto 40px;
     }
   </style>
 </head>
 
 <body>
+    <header></header>
     <h1>Nodeschool Haarlem</h1>
     <a href="http://sytac.io/"><img class="logo" src="resources/nodeschool-haarlem.svg" alt="sytac.io"></a>
+    <div class="text-editor-wrap">
+        <div class="title-bar"><span class="title">nodeschool.io/haarlem/ — bash — 80x<span class="terminal-height">10</span></span></div>
+        <div class="text-body">
+            $ <span id="typed">Try it out!</span>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="resources/typed.js"></script>
 </body>
 </html>
