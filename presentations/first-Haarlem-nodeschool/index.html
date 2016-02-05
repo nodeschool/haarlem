@@ -29,6 +29,12 @@
             document.getElementsByTagName( 'head' )[0].appendChild( link );
         </script>
 
+        <style>
+            .reveal pre code {
+                max-height: none;
+            }
+        </style>
+
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
@@ -162,6 +168,10 @@
             });
 
         </script>
-
+        <script>
+            Reveal.addEventListener('slidechanged', function(event) {
+                document.querySelector('.reveal.slide.center').scrollTop = 0
+            });
+        </script>
     </body>
 </html>

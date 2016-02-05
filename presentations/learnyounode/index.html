@@ -30,9 +30,9 @@
         </script>
 
         <style>
-        .reveal pre code {
-            max-height: none;
-        }
+            .reveal pre code {
+                max-height: none;
+            }
         </style>
 
         <!--[if lt IE 9]>
@@ -1000,6 +1000,10 @@ npm install -g learnyounode
             });
 
         </script>
-
+        <script>
+            Reveal.addEventListener('slidechanged', function(event) {
+                document.querySelector('.reveal.slide.center').scrollTop = 0
+            });
+        </script>
     </body>
 </html>
