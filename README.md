@@ -1,4 +1,4 @@
-![NodeSchool Haarlem](./resources/nodeschool-haarlem.svg)
+![NodeSchool Haarlem](resources/nodeschool-haarlem.png)
 
 # NodeSchool Haarlem
 
