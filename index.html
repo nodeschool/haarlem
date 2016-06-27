@@ -1,89 +1,50 @@
 ---
-
+layout: default
 ---
-<!doctype html>
-
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Nodeschool Haarlem</title>
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link href="resources/style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="1240" height="600" viewBox="0 0 1240 600" onload="" class="__web-inspector-hide-shortcut__">
-        <!-- Matthew Bystedt http://apike.ca 2012 -->
-
-        <!-- Pattern Definition -->
-        <defs>
-            <pattern id="checkerPattern" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20" viewBox="0 0 10 10">
-
-                <rect x="0" y="0" width="5" height="5" fill="lightblue"/>
-                <rect x="5" y="5" width="5" height="5" fill="lightblue"/>
-            </pattern>
-
-            <polygon id="star1" points="0,90 45,12 135,12 180,90 135,168 45,165" stroke-width="4"/>
-            <polygon id="star2" points="0,180 90,24 270,24 360,180 270,336 90,336" stroke-width="4"/>
-            <polygon id="star3" points="0,360 180,48 540,48 720,360 540,672 180,672" stroke-width="4"/>
-        </defs>
-
-        <!-- Background -->
-        <rect x="0" y="0" width="100%" height="100%" fill="url(#skyGrad)"/>
-
-        <g id="starGroup"></g>
-
-        <ellipse cx="200" cy="520" rx="600" ry="300" fill="url(#groundGrad)"/>
-        <ellipse cx="500" cy="560" rx="600" ry="300" fill="url(#groundGrad)"/>
-    </svg>
-
-    <div class="content">
-        <div class="body">
-            <div class="inner">
-                <section class="header">
-                    <header>
-                        <a href="/">
-                            <img src="https://raw.githubusercontent.com/nodeschool/haarlem/master/resources/nodeschool-haarlem.png" alt="Nodeschool Haarlem" title="Nodeschool Haarlem" />
-                        </a>
-                        <h1>NodeSchool Haarlem</h1>
-                    </header>
-                </section>
-            </div>
-            <section class="meetup">
-                <article>
-                    <img src="resources/images/meetup.jpeg" alt="meetup.com logo" title="meetup.com logo">
-                    <a href="http://www.meetup.com/Nodeschool-Haarlem/">
-                        <span>Find the next meeting at Meetup.com</span>
-                    </a>
-                </article>
-            </section>
-
-            <section>
-                <article>
-                    <h3>What is Nodeschool?</h3>
-                    <p>NodeSchool is an open source project run by volunteerst with two goals: to create high quality programming curriculum and to host community learning events.</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h3>Workshoppers</h3>
-                    <p>Workshopper is the name used for the open source lesson modules associated with NodeSchool. All are self guided (you don't need to attend a workshop to do one) and most work offline.</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <h3>Workshops</h3>
-                    <p>These are free to attend, in-person hosted workshops, in which workshoppers are used as curriculum and mentros help attendees work through the challenges. We host NodeSchool in Haarlem two times a month*
-                    </p>
-                    <sub>* obligatory pizza and drinks included, for Free.</sub>
-
-                </article>
-            </section>
-        </div>
-    </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="resources/typed.js"></script>
-    <script src="resources/js/svgbackground.js"></script>
-</body>
-</html>
+<div class="main">
+	<section>
+		<div class="section typeset">
+			<div class="single-measure">
+				<h1>NodeSchool Haarlem</h1>
+				<h4>Open source workshops that teach web software skills.</h4>
+				<a href="https://meetup.com/nodeschool-haarlem"><img src="assets/images/nodeschool-haarlem-sweet-sixteen-badge.png" class="badge" alt=""></a>
+			</div>
+		</div>
+		<div class="section typeset aside">
+			<div id="particles-js"></div>
+			<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+			<script src="assets/scripts/sweet-sixteen.js"></script>
+			<div class="single-measure centered">
+				<a href="https://meetup.com/nodeschool-haarlem"><img class="logo" src="assets/images/nodeschool-haarlem-shadow-sweet-sixteen.png"></a>
+			</div>
+		</div>
+		<div class="yellow-bar">
+			<div class="section typeset">
+				<div class="single-measure">
+					<h4>Workshops</h4>
+					<p>We host free to attend workshops, in which <a href="http://nodeschool.io/#workshoppers">workshoppers</a> are used as curriculum and mentors help attendees work through the challenges. We host NodeSchool in Haarlem at least once a month.*</p>
+					<p class="caption">* Well, we try to host >1 per month.</p>
+				</div>
+			</div>
+		</div>
+		<div class="section typeset">
+			<div class="single-measure">
+				<h4>For who?</h4>
+				<p>Basically for everyone. The level of difficulty of <a href="">our curriculum</a> ranges from beginner to advanced, so there's something for everyone to learn.</p>
+				<p>With everyone, we mean everyone. To make sure everyone is able to feel welcome and safe, we have created a <a href="code-of-conduct">code of conduct</a>. The shortest version is: Don't be a jerk, be excellent to eachother.</p>
+				<p>The longer version of our <a href="code-of-conduct">code of conduct</a> provides a more subtle and elaborate perspective on our point of view.</p>
+			</div>
+		</div>
+		<div class="yellow-bar">
+			<div class="section typeset">
+				<div class="single-measure">
+					<h4>
+						Interested in learning Node.js?
+					</h4>
+					<p>If you'd like to learn Node.js head over to <a href="https://meetup.com/nodeschool-haarlem">https://meetup.com/nodeschool-haarlem</a>, join our community and stay informed when the next meetup will be!</p>
+				</div>
+			</div>
+		</div>
+		{% include footer.html %}
+	</section>
+</div>
