@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>reveal.js – The HTML Presentation Framework</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <style>
+            .reveal pre code {
+                max-height: none;
+            }
+        </style>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>NodeSchool Haarlem #1</h1>
+                    <p>
+                        Welcome to the first ever NodeSchool Haarlem
+                    </p>
+                </section>
+
+                <section>
+                    <h2>About NodeSchool</h2>
+                    <p>
+                        Open source workshops that teach web software skills.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Mentors</h2>
+                    <p>
+                        <img src="lib/img/jp.jpeg">
+                        <img src="lib/img/rick.jpeg">
+                        <img src="lib/img/davide.jpeg">
+                        <img src="lib/img/stefan.png">
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Format</h2>
+                    <p>
+                        Two types of workshops: Core and Electives (your pick!)
+                    </p>
+                    <p>
+                        Work together and ask questions (we won't bite!)
+                    </p>
+                </section>
+
+                <!-- Example of nested vertical slides -->
+                <section>
+                    <section>
+
+                        <h2>How To Get Started</h2>
+                        <p>Install Node.js and npm</p>
+                        <p>Install a workshopper</p>
+                        <p>Learn and have fun!</p>
+
+                    </section>
+
+                    <section>
+                        <h3>Installing Node.js and npm</h3>
+                        <p>
+                            Easiest way is to download a pre-built installer.
+                        </p>
+                        <p>
+                            Go to <a href="https://nodejs.org/en/download/" target="_blank">nodejs.org/en/download/</a> and grab the installer for your platform.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Installing Node.js and npm</h3>
+                        <p>
+                            On Ubuntu, open Terminal and type:
+                        </p>
+                        <p>
+                            <code>$ sudo apt-get install -y nodejs</code>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Installing Node.js and npm</h3>
+                        <p>
+                            On Mac OS X, open Terminal and type:
+                        </p>
+                        <p>
+                            <code>$ brew install node</code>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Installing a workshopper</h3>
+                        <p>
+                            Start learning Node.js by opening a Terminal or Command Prompt and typing:
+                        </p>
+                        <p>
+                            <code>$ npm install -g learnyounode</code>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Have fun!</h3>
+                        <p>
+                            Explore more workshoppers at <a href="http://nodeschool.io/#workshopper-list">nodeschool.io/#workshopper-list</a>
+                        </p>
+                    </section>
+
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+        <script>
+            Reveal.addEventListener('slidechanged', function(event) {
+                document.querySelector('.reveal.slide.center').scrollTop = 0
+            });
+        </script>
+    </body>
+</html>
